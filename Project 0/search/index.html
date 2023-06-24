@@ -2,15 +2,33 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <style>
+            #google-search {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);            
+            }
+
+            #webpage-links {
+                position: absolute; 
+                top: 0px;
+                right: 0px;
+            }
+        </style>
     </head>
     <body>
-        <img src="google-logo.png" alt="Google Logo" width="300">
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky" name="btnI">
-        </form>
-        <a href="image.html">Image Search</a>
-        <a href="advanced.html">Advanced Search</a>
+        <div id="google-search">
+            <img src="google-logo.png" alt="Google Logo" width="300">
+            <form action="https://google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky" name="btnI">
+            </form>            
+        </div>
+        <div id="webpage-links">
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
     </body>
 </html>
