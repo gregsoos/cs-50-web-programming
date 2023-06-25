@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Search</title>
         <style>
             #google-search {
@@ -12,23 +14,24 @@
 
             #webpage-links {
                 position: absolute; 
-                top: 0px;
-                right: 0px;
+                top: 10px;
+                right: 10px;
             }
         </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
     <body>
         <div id="google-search">
             <img src="google-logo.png" alt="Google Logo" width="300">
             <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky" name="btnI">
+                <input class="form-control" type="text" name="q">
+                <input class="btn btn-primary" type="submit" value="Google Search">
+                <input class="btn btn-primary" type="submit" value="I'm Feeling Lucky" name="btnI">
             </form>            
         </div>
         <div id="webpage-links">
-            <a href="image.html">Image Search</a>
-            <a href="advanced.html">Advanced Search</a>
+            <a class="btn btn-secondary btn-sm" href="image.html" role="button">Image Search</a>
+            <a class="btn btn-secondary btn-sm" href="advanced.html" role="button">Advanced Search</a>
         </div>
     </body>
 </html>
