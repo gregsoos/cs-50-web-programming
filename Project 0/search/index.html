@@ -6,10 +6,28 @@
         <title>Search</title>
         <style>
             #google-search {
+                text-align: center;
                 position: absolute;
-                top: 50%;
+                top: 40%;
                 left: 50%;
                 transform: translate(-50%, -50%);            
+            }
+
+            #google-search #google-logo {
+                position: relative;
+                bottom: 15px;
+            }
+
+            #google-search #search-bar {
+                width: 180%;
+                position: relative;
+                right: 40%;
+            }
+
+            #google-search #submit-search-buttons {
+                display: inline;
+                position: relative;
+                top: 15px;
             }
 
             #webpage-links {
@@ -22,11 +40,13 @@
     </head>
     <body>
         <div id="google-search">
-            <img src="google-logo.png" alt="Google Logo" width="300">
+            <img id="google-logo" src="google-logo.png" alt="Google Logo" width="300">
             <form action="https://google.com/search">
-                <input class="form-control" type="text" name="q">
-                <input class="btn btn-primary" type="submit" value="Google Search">
-                <input class="btn btn-primary" type="submit" value="I'm Feeling Lucky" name="btnI">
+                <input id="search-bar" class="form-control" type="text" name="q">
+                <div id="submit-search-buttons">
+                    <input class="btn btn-primary" type="submit" value="Google Search">
+                    <input class="btn btn-primary" type="submit" value="I'm Feeling Lucky" name="btnI">
+                </div>
             </form>            
         </div>
         <div id="webpage-links">
